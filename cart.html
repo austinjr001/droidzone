@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DroidZone - Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cart-header">
+
+        <a href="index.html" class="logo">
+            Droid<span>Zone</span>
+        </a>
+
+        <a href="index.html" class="back-btn">
+            ← Continue Shopping
+        </a>
+
+    </header>
+
+
+    <main class="cart-page">
+
+        <h1>Your Shopping Cart 🛒</h1>
+
+        <div id="cartItems"></div>
+
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Items</span>
+                <span id="cartCount">0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Total</span>
+                <strong id="cartTotal">₦0</strong>
+            </div>
+
+            <button id="whatsappCheckout">
+                💬 Checkout on WhatsApp
+            </button>
+
+            <button id="clearCart" class="clear-cart">
+                🗑️ Clear Cart
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

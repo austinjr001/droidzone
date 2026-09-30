@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DroidZone - Android Phone Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Droid<span>Zone</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#phones">Phones</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="searchBtn">🔍</button>
+
+                <button id="cartBtn">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button id="menuBtn">☰</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- SEARCH BOX -->
+    <div class="search-box" id="searchBox">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Android phones..."
+        >
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small">THE FUTURE IS IN YOUR HAND</p>
+
+            <h1>
+                Find Your<br>
+                <span>Perfect Android</span>
+            </h1>
+
+            <p>
+                Discover the latest Android smartphones
+                from your favourite brands at amazing prices.
+            </p>
+
+            <a href="#phones" class="hero-btn">
+                Shop Phones
+            </a>
+
+        </div>
+
+        <div class="hero-phone">
+            <div class="phone-shape">
+                <div class="camera"></div>
+                <div class="screen">
+                    <span>Android</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- BRANDS -->
+    <section class="brands" id="brands">
+
+        <h2>Shop By Brand</h2>
+
+        <div class="brand-container">
+
+            <button class="brand-btn" data-brand="all">
+                All
+            </button>
+
+            <button class="brand-btn" data-brand="Samsung">
+                Samsung
+            </button>
+
+            <button class="brand-btn" data-brand="Tecno">
+                Tecno
+            </button>
+
+            <button class="brand-btn" data-brand="Infinix">
+                Infinix
+            </button>
+
+            <button class="brand-btn" data-brand="Redmi">
+                Redmi
+            </button>
+
+            <button class="brand-btn" data-brand="Google">
+                Google
+            </button>
+   <button class="brand-btn"    data-brand="OnePlus">
+    OnePlus
+     </button>
+
+   <button class="brand-btn" data-brand="Nothing">
+    Nothing
+    </button>
+        </div>
+
+    </section>
+<!-- ================= PHONES ================= -->
+
+<section class="phones" id="phones">
+
+    <div class="section-heading">
+
+        <div>
+            <p>OUR PRODUCTS</p>
+            <h2>Latest Android Phones</h2>
+        </div>
+
+        <select id="sortProducts">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
+
+    </div>
+
+
+    <div class="phone-grid" id="phoneGrid">
+
+
+        <!-- ================= 1. SAMSUNG S25 ================= -->
+<div class="phone-card"
+     data-brand="Samsung"
+     data-price="850000"
+     data-name="Samsung Galaxy S25"
+     onclick="openProduct('Samsung Galaxy S25')"> 
+
+            <div class="phone-image">
+
+                <img src="images/samsung-s25.jpg"
+                     alt="Samsung Galaxy S25">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Samsung</p>
+
+                <h3>Galaxy S25</h3>
+
+                <p class="spec">
+                    256GB • 12GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦850,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Samsung Galaxy S25"
+                            data-price="850000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 2. TECNO CAMON 30 ================= -->
+
+        <div class="phone-card"
+             data-brand="Tecno"
+             data-price="480000"
+             data-name="Tecno Camon 30"
+onclick="openProduct('Tecno Camon 30')"> 
+            <div class="phone-image">
+
+                <img src="images/tecno-camon-30.jpg"
+                     alt="Tecno Camon 30">
+
+                <span class="badge">HOT</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Tecno</p>
+
+                <h3>Camon 30</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • AMOLED
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦480,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Tecno Camon 30"
+                            data-price="480000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 3. INFINIX NOTE 40 ================= -->
+
+        <div class="phone-card"
+             data-brand="Infinix"
+             data-price="390000"
+             data-name="Infinix Note 40"
+             onclick="openProduct('Infinix Note 40')"> >
+
+            <div class="phone-image">
+
+                <img src="images/infinix-note-40.jpg"
+                     alt="Infinix Note 40">
+
+                <span class="badge">SALE</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Infinix</p>
+
+                <h3>Note 40</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 5000mAh
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦390,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Infinix Note 40"
+                            data-price="390000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 4. REDMI NOTE 14 ================= -->
+
+        <div class="phone-card"
+             data-brand="Redmi"
+             data-price="320000"
+             data-name="Redmi Note 14"
+onclick="openProduct('Redmi Note 14')"> 
+            <div class="phone-image">
+
+                <img src="images/redmi-note-14.jpg"
+                     alt="Redmi Note 14">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Redmi</p>
+
+                <h3>Redmi Note 14</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 108MP
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦320,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Redmi Note 14"
+                            data-price="320000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 5. GOOGLE PIXEL 9 ================= -->
+
+        <div class="phone-card"
+             data-brand="Google"
+             data-price="720000"
+             data-name="Google Pixel 9"
+onclick="openProduct('Google Pixel 9')"> 
+            <div class="phone-image">
+
+                <img src="images/google-pixel-9.jpg"
+                     alt="Google Pixel 9">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Google</p>
+
+                <h3>Pixel 9</h3>
+
+                <p class="spec">
+                    128GB • 12GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦720,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Google Pixel 9"
+                            data-price="720000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 6. SAMSUNG A56 ================= -->
+
+        <div class="phone-card"
+             data-brand="Samsung"
+             data-price="560000"
+             data-name="Samsung Galaxy A56"
+onclick="openProduct('Samsung Galaxy A56')" 
+            <div class="phone-image">
+
+                <img src="images/samsung-a56.jpg"
+                     alt="Samsung Galaxy A56">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Samsung</p>
+
+                <h3>Galaxy A56</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦560,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Samsung Galaxy A56"
+                            data-price="560000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 7. SAMSUNG A36 ================= -->
+
+        <div class="phone-card"
+             data-brand="Samsung"
+             data-price="450000"
+            data-name="Samsung Galaxy A36 5G"
+onclick="openProduct('Samsung Galaxy A36 5G')"> 
+            <div class="phone-image">
+
+                <img src="images/samsung-a36-5g.jpg"
+                     alt="Samsung Galaxy A36 5G">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Samsung</p>
+
+                <h3>Galaxy A36 5G</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦450,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Samsung Galaxy A36 5G"
+                            data-price="450000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 8. SAMSUNG S24 FE ================= -->
+
+        <div class="phone-card"
+             data-brand="Samsung"
+             data-price="680000"
+            data-name="Samsung Galaxy S24 FE"
+onclick="openProduct('Samsung Galaxy S24 FE')"> 
+            <div class="phone-image">
+
+                <img src="images/samsung-s24-fe.jpg"
+                     alt="Samsung Galaxy S24 FE">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Samsung</p>
+
+                <h3>Galaxy S24 FE</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦680,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Samsung Galaxy S24 FE"
+                            data-price="680000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 9. TECNO CAMON 50 ================= -->
+
+        <div class="phone-card"
+             data-brand="Tecno"
+             data-price="520000"
+             data-name="Tecno Camon 50"
+onclick="openProduct('Tecno Camon 50')"> 
+            <div class="phone-image">
+
+                <img src="images/tecno-camon-50.jpg"
+                     alt="Tecno Camon 50">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Tecno</p>
+
+                <h3>Camon 50</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • AMOLED
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦520,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Tecno Camon 50"
+                            data-price="520000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 10. TECNO SPARK 30 PRO ================= -->
+
+        <div class="phone-card"
+             data-brand="Tecno"
+             data-price="300000"
+             data-name="Tecno Spark 30 Pro">
+
+            <div class="phone-image">
+
+                <img src="images/tecno-spark-30-pro.jpg"
+                     alt="Tecno Spark 30 Pro">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Tecno</p>
+
+                <h3>Spark 30 Pro</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • AMOLED
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦300,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Tecno Spark 30 Pro"
+                            data-price="300000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 11. INFINIX NOTE 50 ================= -->
+
+        <div class="phone-card"
+             data-brand="Infinix"
+             data-price="430000"
+             data-name="Infinix Note 50">
+
+            <div class="phone-image">
+
+                <img src="images/infinix-note-50.jpg"
+                     alt="Infinix Note 50">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Infinix</p>
+
+                <h3>Note 50</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • AMOLED
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦430,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Infinix Note 50"
+                            data-price="430000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 12. INFINIX HOT 50 PRO+ ================= -->
+
+        <div class="phone-card"
+             data-brand="Infinix"
+             data-price="360000"
+             data-name="Infinix Hot 50 Pro+">
+
+            <div class="phone-image">
+
+                <img src="images/infinix-hot-50-pro-plus.jpg"
+                     alt="Infinix Hot 50 Pro+">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Infinix</p>
+
+                <h3>Hot 50 Pro+</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • AMOLED
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦360,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Infinix Hot 50 Pro+"
+                            data-price="360000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 13. REDMI NOTE 14 PRO ================= -->
+
+        <div class="phone-card"
+             data-brand="Redmi"
+             data-price="490000"
+             data-name="Redmi Note 14 Pro">
+
+            <div class="phone-image">
+
+                <img src="images/redmi-note-14-pro.jpg"
+                     alt="Redmi Note 14 Pro">
+
+                <span class="badge">HOT</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Redmi</p>
+
+                <h3>Note 14 Pro</h3>
+
+                <p class="spec">
+                    256GB • 8GB RAM • 200MP
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦490,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Redmi Note 14 Pro"
+                            data-price="490000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 14. GOOGLE PIXEL 9A ================= -->
+
+        <div class="phone-card"
+             data-brand="Google"
+             data-price="590000"
+             data-name="Google Pixel 9a">
+
+            <div class="phone-image">
+
+                <img src="images/google-pixel-9a.jpg"
+                     alt="Google Pixel 9a">
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Google</p>
+
+                <h3>Pixel 9a</h3>
+
+                <p class="spec">
+                    128GB • 8GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦590,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Google Pixel 9a"
+                            data-price="590000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 15. ONEPLUS 13 ================= -->
+
+        <div class="phone-card"
+             data-brand="OnePlus"
+             data-price="900000"
+             data-name="OnePlus 13">
+
+            <div class="phone-image">
+
+                <img src="images/oneplus-13.jpg"
+                     alt="OnePlus 13">
+
+                <span class="badge">PREMIUM</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">OnePlus</p>
+
+                <h3>OnePlus 13</h3>
+
+                <p class="spec">
+                    512GB • 16GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦900,000</strong>
+
+                    <button class="add-btn"
+                            data-name="OnePlus 13"
+                            data-price="900000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= 16. NOTHING PHONE 3A ================= -->
+
+        <div class="phone-card"
+             data-brand="Nothing"
+             data-price="500000"
+             data-name="Nothing Phone 3a">
+
+            <div class="phone-image">
+
+                <img src="images/nothing-phone-3a.jpg"
+                     alt="Nothing Phone 3a">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="phone-info">
+
+                <p class="brand-name">Nothing</p>
+
+                <h3>Phone 3a</h3>
+
+                <p class="spec">
+                    256GB • 12GB RAM • 5G
+                </p>
+
+                <div class="phone-bottom">
+
+                    <strong>₦500,000</strong>
+
+                    <button class="add-btn"
+                            data-name="Nothing Phone 3a"
+                            data-price="500000">
+                        + Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+    <!-- WHY US -->
+    <section class="why-us">
+
+        <h2>Why Shop With DroidZone?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <div>🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Get your phone delivered quickly.</p>
+            </div>
+
+            <div class="feature">
+                <div>🔒</div>
+                <h3>Secure Payment</h3>
+                <p>Your transactions are protected.</p>
+            </div>
+
+            <div class="feature">
+                <div>✅</div>
+                <h3>Quality Products</h3>
+                <p>Shop genuine smartphones.</p>
+            </div>
+
+            <div class="feature">
+                <div>📞</div>
+                <h3>Customer Support</h3>
+                <p>We're available to assist you.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- ================= DEALS ================= -->
+
+<section class="deals-section" id="deals">
+
+    <div class="section-heading">
+
+        <div>
+            <p>LIMITED OFFERS</p>
+            <h2>🔥 Today's Deals</h2>
+        </div>
+
+        <span class="deal-note">
+            Save more on selected phones
+        </span>
+
+    </div>
+
+
+    <div class="deals-grid">
+
+
+        <!-- Samsung A36 -->
+
+        <div class="deal-card">
+
+            <div class="deal-image">
+
+                <img
+                    src="images/samsung-a36-5g.jpg"
+                    alt="Samsung Galaxy A36 5G"
+                >
+
+                <span class="discount-badge">
+                    -7%
+                </span>
+
+            </div>
+
+
+            <div class="deal-info">
+
+                <p>Samsung</p>
+
+                <h3>Galaxy A36 5G</h3>
+
+                <div class="deal-price">
+
+                    <span class="old-price">
+                        ₦450,000
+                    </span>
+
+                    <strong>
+                        ₦420,000
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="add-btn"
+                    data-name="Samsung Galaxy A36 5G"
+                    data-price="420000">
+
+                    🛒 Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TECNO Spark -->
+
+        <div class="deal-card">
+
+            <div class="deal-image">
+
+                <img
+                    src="images/tecno-spark-30-pro.jpg"
+                    alt="TECNO Spark 30 Pro"
+                >
+
+                <span class="discount-badge">
+                    -7%
+                </span>
+
+            </div>
+
+
+            <div class="deal-info">
+
+                <p>TECNO</p>
+
+                <h3>Spark 30 Pro</h3>
+
+                <div class="deal-price">
+
+                    <span class="old-price">
+                        ₦300,000
+                    </span>
+
+                    <strong>
+                        ₦280,000
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="add-btn"
+                    data-name="Tecno Spark 30 Pro"
+                    data-price="280000">
+
+                    🛒 Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Infinix Note 50 -->
+
+        <div class="deal-card">
+
+            <div class="deal-image">
+
+                <img
+                    src="images/infinix-note-50.jpg"
+                    alt="Infinix Note 50"
+                >
+
+                <span class="discount-badge">
+                    -7%
+                </span>
+
+            </div>
+
+
+            <div class="deal-info">
+
+                <p>Infinix</p>
+
+                <h3>Note 50</h3>
+
+                <div class="deal-price">
+
+                    <span class="old-price">
+                        ₦430,000
+                    </span>
+
+                    <strong>
+                        ₦400,000
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="add-btn"
+                    data-name="Infinix Note 50"
+                    data-price="400000">
+
+                    🛒 Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Redmi Note 14 Pro -->
+
+        <div class="deal-card">
+
+            <div class="deal-image">
+
+                <img
+                    src="images/redmi-note-14-pro.jpg"
+                    alt="Redmi Note 14 Pro"
+                >
+
+                <span class="discount-badge">
+                    -6%
+                </span>
+
+            </div>
+
+
+            <div class="deal-info">
+
+                <p>Redmi</p>
+
+                <h3>Note 14 Pro</h3>
+
+                <div class="deal-price">
+
+                    <span class="old-price">
+                        ₦490,000
+                    </span>
+
+                    <strong>
+                        ₦460,000
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="add-btn"
+                    data-name="Redmi Note 14 Pro"
+                    data-price="460000">
+
+                    🛒 Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+                <div class="footer-logo">
+                    Droid<span>Zone</span>
+                </div>
+
+                <p>
+                    Your trusted destination for
+                    Android smartphones.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#phones">Phones</a>
+                <a href="#brands">Brands</a>
+                <a href="#deals">Deals</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📞 +234 9112330855</p>
+                <p>📧 droidzone.@gmail.com</p>
+                <p>📍 Nigeria</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 DroidZone. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>My Cart</h2>
+
+            <button id="closeCart">×</button>
+
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div>
+                <span>Total:</span>
+                <strong id="cartTotal">₦0</strong>
+            </div>
+
+            <button id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="js/script.js"></script>
+<script>
+
+function openProduct(phoneName) {
+
+    window.location.href =
+        "product.html?phone=" +
+        encodeURIComponent(phoneName);
+
+}
+
+</script>
+</body>
+</html>

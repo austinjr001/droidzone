@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DroidZone - Product Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="product-header">
+
+        <a href="index.html" class="logo">
+            Droid<span>Zone</span>
+        </a>
+
+        <a href="index.html" class="back-btn">
+            ← Back to Shop
+        </a>
+
+    </header>
+
+
+    <!-- PRODUCT DETAILS -->
+
+    <main class="product-page">
+
+        <div class="product-container">
+
+            <!-- PRODUCT IMAGE -->
+
+            <div class="product-image-box">
+
+                <img id="productImage"
+                     src=""
+                     alt="Phone">
+
+            </div>
+
+
+            <!-- PRODUCT INFORMATION -->
+
+            <div class="product-details">
+
+                <p id="productBrand"
+                   class="product-brand">
+                </p>
+
+                <h1 id="productName">
+                </h1>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>Customer Rating</span>
+                </div>
+
+                <h2 id="productPrice">
+                </h2>
+
+                <p class="product-description">
+
+                    Experience powerful performance,
+                    excellent camera quality and a
+                    beautiful display with this smartphone.
+
+                </p>
+
+
+                <!-- SPECIFICATIONS -->
+
+                <div class="specifications">
+
+                    <h3>Specifications</h3>
+
+                    <div class="spec-row">
+
+                        <span>Storage</span>
+                        <strong id="productStorage">
+                        </strong>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <span>RAM</span>
+                        <strong id="productRam">
+                        </strong>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <span>Network</span>
+                        <strong>5G</strong>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <span>Battery</span>
+                        <strong>5000mAh</strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="product-actions">
+
+                    <button id="addProduct"
+                            class="product-cart-btn">
+
+                        🛒 Add to Cart
+
+                    </button>
+
+
+                    <button id="whatsappProduct"
+                            class="whatsapp-btn">
+
+                        💬 Buy on WhatsApp
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        // ================= PRODUCT DATA =================
+
+        const products = {
+
+            "Samsung Galaxy S25": {
+                brand: "Samsung",
+                price: 850000,
+                image: "images/samsung-s25.jpg",
+                storage: "256GB",
+                ram: "12GB"
+            },
+
+            "Tecno Camon 30": {
+                brand: "Tecno",
+                price: 480000,
+                image: "images/tecno-camon-30.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Infinix Note 40": {
+                brand: "Infinix",
+                price: 390000,
+                image: "images/infinix-note-40.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Redmi Note 14": {
+                brand: "Redmi",
+                price: 320000,
+                image: "images/redmi-note-14.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Google Pixel 9": {
+                brand: "Google",
+                price: 720000,
+                image: "images/google-pixel-9.jpg",
+                storage: "128GB",
+                ram: "12GB"
+            },
+
+            "Samsung Galaxy A56": {
+                brand: "Samsung",
+                price: 560000,
+                image: "images/samsung-a56.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Samsung Galaxy A36 5G": {
+                brand: "Samsung",
+                price: 450000,
+                image: "images/samsung-a36-5g.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Samsung Galaxy S24 FE": {
+                brand: "Samsung",
+                price: 680000,
+                image: "images/samsung-s24-fe.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Tecno Camon 50": {
+                brand: "Tecno",
+                price: 520000,
+                image: "images/tecno-camon-50.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Tecno Spark 30 Pro": {
+                brand: "Tecno",
+                price: 300000,
+                image: "images/tecno-spark-30-pro.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Infinix Note 50": {
+                brand: "Infinix",
+                price: 430000,
+                image: "images/infinix-note-50.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Infinix Hot 50 Pro+": {
+                brand: "Infinix",
+                price: 360000,
+                image: "images/infinix-hot-50-pro-plus.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Redmi Note 14 Pro": {
+                brand: "Redmi",
+                price: 490000,
+                image: "images/redmi-note-14-pro.jpg",
+                storage: "256GB",
+                ram: "8GB"
+            },
+
+            "Google Pixel 9a": {
+                brand: "Google",
+                price: 590000,
+                image: "images/google-pixel-9a.jpg",
+                storage: "128GB",
+                ram: "8GB"
+            },
+
+            "OnePlus 13": {
+                brand: "OnePlus",
+                price: 900000,
+                image: "images/oneplus-13.jpg",
+                storage: "512GB",
+                ram: "16GB"
+            },
+
+            "Nothing Phone 3a": {
+                brand: "Nothing",
+                price: 500000,
+                image: "images/nothing-phone-3a.jpg",
+                storage: "256GB",
+                ram: "12GB"
+            }
+
+        };
+
+
+        // ================= GET PHONE =================
+
+        const urlParams =
+            new URLSearchParams(window.location.search);
+
+        const phoneName =
+            urlParams.get("phone");
+
+
+        const product =
+            products[phoneName];
+
+
+        // ================= DISPLAY PRODUCT =================
+
+        if (product) {
+
+            document.getElementById("productImage")
+                .src = product.image;
+
+            document.getElementById("productImage")
+                .alt = phoneName;
+
+            document.getElementById("productBrand")
+                .textContent = product.brand;
+
+            document.getElementById("productName")
+                .textContent = phoneName;
+
+            document.getElementById("productPrice")
+                .textContent =
+                "₦" + product.price.toLocaleString();
+
+            document.getElementById("productStorage")
+                .textContent = product.storage;
+
+            document.getElementById("productRam")
+                .textContent = product.ram;
+
+        }
+
+
+        // ================= ADD TO CART =================
+
+        document.getElementById("addProduct")
+            .addEventListener("click", function () {
+
+                let cart =
+                    JSON.parse(localStorage.getItem("cart"))
+                    || [];
+
+                cart.push({
+
+                    name: phoneName,
+
+                    price: product.price,
+
+                    quantity: 1
+
+                });
+
+                localStorage.setItem(
+                    "cart",
+                    JSON.stringify(cart)
+                );
+
+                alert(
+                    phoneName +
+                    " has been added to your cart!"
+                );
+
+            });
+
+
+        // ================= WHATSAPP =================
+
+        document.getElementById("whatsappProduct")
+            .addEventListener("click", function () {
+
+                const whatsappNumber =
+                    "2348012345678";
+
+                const message =
+                    "Hello DroidZone 👋%0A%0A" +
+
+                    "I want to buy:%0A%0A" +
+
+                    "📱 " +
+                    phoneName +
+                    "%0A" +
+
+                    "💰 Price: ₦" +
+                    product.price.toLocaleString() +
+
+                    "%0A%0A" +
+
+                    "Please send me the payment " +
+                    "and delivery details.";
+
+                const url =
+                    "https://wa.me/" +
+                    whatsappNumber +
+                    "?text=" +
+                    message;
+
+                window.open(url, "_blank");
+
+            });
+
+    </script>
+
+</body>
+
+</html>
